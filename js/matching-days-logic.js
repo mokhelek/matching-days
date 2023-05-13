@@ -1,3 +1,4 @@
+
 //  ? Date format : -> 2023-05-24
 
 function MatchingDays() {
@@ -27,7 +28,7 @@ function MatchingDays() {
     }
 
     function compareDates() {
-        return getFirstDate() == getSecondDate();
+        return getFirstDate() === getSecondDate();
     }
 
     function returnClassName() {

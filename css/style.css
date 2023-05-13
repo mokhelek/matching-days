@@ -28,6 +28,6 @@ input[type = "date"]{
 .red{
     background-color: rgb(255, 93, 93);
 }
-.success{
+.green{
     background-color: rgb(111, 255, 111);
 }

@@ -1,0 +1,33 @@
+.days{
+    border: 1px gray solid;
+    padding:1rem;
+    flex: 0 1 140px;
+    text-align:center;
+    height: 4rem;
+}
+.days-wrapper{
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+input[type = "date"]{
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-radius: 20px;
+    border: 1px gray solid;
+    padding: 0.5rem;
+    color: purple;
+}
+
+
+.blue{
+    background-color: rgb(144, 144, 255);
+}
+.red{
+    background-color: rgb(255, 93, 93);
+}
+.success{
+    background-color: rgb(111, 255, 111);
+}

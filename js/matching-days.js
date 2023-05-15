@@ -34,7 +34,7 @@ function highlightDays() {
     if (date1.value && date2.value) {
         if (myFactory.compareDates()) {
             refreshClasses()
-            day1.classList.add("green");
+            day1.classList.add( myFactory.returnClassName());
         } else {
             refreshClasses()
             day1.classList.add(myFactory.returnClassName().first);
@@ -42,10 +42,10 @@ function highlightDays() {
         }
     } else if (date1.value == "" && date2.value) {
         refreshClasses()
-        day2.classList.add("blue");
+        day2.classList.add(myFactory.returnClassName().first);
     } else if (date2.value == "" && date1.value) {
         refreshClasses()
-        day1.classList.add("blue");
+        day1.classList.add(myFactory.returnClassName().first);
     } else {
         refreshClasses()
     }

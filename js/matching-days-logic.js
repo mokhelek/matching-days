@@ -9,6 +9,8 @@ function MatchingDays() {
     let firstDateClassName = "blue";
     let wrongClassName = "red";
 
+    let scoreCounter = 0 ;
+
     function setFirstDate(dateString) {
         let date1 = new Date(dateString);
         firstDate = date1.getDay();
@@ -28,6 +30,9 @@ function MatchingDays() {
     }
 
     function compareDates() {
+        if(getFirstDate() === getSecondDate()){
+            scoreCounter++;
+        }
         return getFirstDate() === getSecondDate();
     }
 

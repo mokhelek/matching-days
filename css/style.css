@@ -1,9 +1,28 @@
+@font-face {
+    font-family: "Fun Font";
+    src: url("../css/PlayfulAlphabetDemo-ywAP5.ttf");
+}
+
+h1{
+    font-family: "Fun Font";
+    font-size: 3.5rem;
+    text-shadow: white;
+}
+body{
+    background: linear-gradient(to right ,rgb(255, 81, 0) , yellow);
+}
+
 .days{
-    border: 1px gray solid;
+    border: 2px rgb(223, 103, 42) solid;
+    border-radius: 5px;
     padding:1rem;
     flex: 0 1 140px;
     text-align:center;
     height: 4rem;
+    /* box-shadow: 0 0 6px gray; */
+    background-color: rgba(250, 179, 125, 0.611);
+    color: rgb(53, 53, 53);
+    text-shadow: 0 0 6px white;
 }
 .days-wrapper{
     display: flex;
@@ -13,21 +32,25 @@
     
 }
 input[type = "date"]{
-    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 51, 96) ;
     box-shadow: none;
-    border-radius: 20px;
-    border: 1px gray solid;
+    border-radius: 5px;
     padding: 0.5rem;
-    color: purple;
+    color: rgb(88, 88, 88);
+    background-color: rgb(253, 202, 107);
 }
+
 
 
 .blue{
     background-color: rgb(144, 144, 255);
+    border: 2px blue dashed;
 }
 .red{
-    background-color: rgb(255, 93, 93);
+    border: 2px red dashed;
+    background-color: rgb(255, 126, 126);
 }
 .green{
+    border: 2px green dashed;
     background-color: rgb(111, 255, 111);
 }

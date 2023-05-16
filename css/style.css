@@ -61,8 +61,12 @@ input[type = "date"]{
     opacity: 0.2;
 
     position: absolute;
-    top: 80%;
+    top: 60%;
     right: 0%;
+}
+
+.test img{
+    width: 40%;
 }
 
 

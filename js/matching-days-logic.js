@@ -1,15 +1,14 @@
-
 //  ? Date format : -> 2023-05-24
 
 function MatchingDays() {
     let firstDate = "";
     let secondDate = "";
 
-    let successClassName = "green";
-    let firstDateClassName = "blue";
-    let wrongClassName = "red";
+    let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    let scoreCounter = 0 ;
+    function getWeekdays(){
+        return weekDays ;
+    }
 
     function setFirstDate(dateString) {
         let date1 = new Date(dateString);
@@ -29,26 +28,11 @@ function MatchingDays() {
         return secondDate;
     }
 
-    function compareDates() {
-        if(getFirstDate() === getSecondDate()){
-            scoreCounter++;
+    function daysMatch(){
+        if(firstDate == secondDate ){
+            return firstDate;
         }
-        return getFirstDate() === getSecondDate();
-    }
-
-    function returnClassName() {
-        if (compareDates()) {
-            return successClassName;
-        }
-        if (firstDate === "" || secondDate === "") {
-            return firstDateClassName;
-        }
-        if (compareDates() === false) {
-            return {
-                first: firstDateClassName,
-                second: wrongClassName,
-            };
-        }
+        
     }
 
     return {
@@ -57,9 +41,8 @@ function MatchingDays() {
 
         getFirstDate,
         getSecondDate,
+        getWeekdays,
+        daysMatch,
 
-        compareDates,
-
-        returnClassName,
     };
 }

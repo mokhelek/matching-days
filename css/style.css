@@ -54,3 +54,21 @@ input[type = "date"]{
     border: 2px green dashed;
     background-color: rgb(111, 255, 111);
 }
+
+.test{
+    font-size: 4rem;
+    font-weight:700 ;
+    opacity: 0.2;
+
+    position: absolute;
+    top: 80%;
+    right: 0%;
+}
+
+
+@media screen  and (max-width:550px){
+    .container{
+        height: 100% !important;
+        margin-top: 2rem;
+    }
+}

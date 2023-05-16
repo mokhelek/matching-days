@@ -9,16 +9,22 @@
     <title>Matching Days | Mokhele Katleho</title>
 </head>
 <body>
+
+    <div class="test">
+        Testing
+    </div>
     <br>
-    <div style="height: 500px;" class="container d-flex align-items-center">
+    <div style="height: 500px;" class="container d-flex align-items-center justify-content-center">
         <div>
             <center>
-
                 <h1>MATCHING DAYS</h1>
             </center>
             <br>
         
             <div  class="days-wrapper">
+                <div id="0" class=" days">
+                    Sunday
+                </div>
                 <div id="1" class=" days">
                     Monday
                 </div>
@@ -37,26 +43,30 @@
                 <div id="6" class=" days">
                     Saturday
                 </div>
-                <div id="0" class=" days">
-                    Sunday
-                </div>
              
-                <div  style="margin-top: 2rem;" class="row">
-                    <div style="text-align: center;" class="col-sm-5">
-                        <input type="date" class="date-input"  name="date1" id="date-input-1">
-                        <label  style="margin-top: 0.5rem;" for="date-input-1"> ~ date 1 ~</label>
-                    </div>
-                    <div style="text-align: center;" class="col-sm-5">
-                        <input type="date" class="date-input" name="date2" id="date-input-2">
-                        <label style="margin-top: 0.5rem;" for="date-input-2"> ~ date 2 ~ </label>
-                    </div>
+            </div>
+
+            <script type="text/x-template" class="daysTemplate">                
+                <div class="days {{#if daysMatch}}green{{else}}{{#if first}}blue{{/if}}{{#if second}}red{{/if}}{{/if}}">
+                    {{days}}
+                </div>
+            </script>
+            <br>
+            <div  style="margin-top: 2rem;" class="row justify-content-center">
+                <div style="text-align: center;" class="col-sm-4">
+                    <input type="date" class="date-input"  name="date1" id="date-input-1"><br>
+                    <label  style="margin-top: 0.5rem;" for="date-input-1"> ~ date 1 ~</label>
+                </div>
+                <div style="text-align: center;" class="col-sm-4">
+                    <input type="date" class="date-input" name="date2" id="date-input-2"><br>
+                    <label style="margin-top: 0.5rem;" for="date-input-2"> ~ date 2 ~ </label>
                 </div>
             </div>
-            <br>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/matching-days-logic.js"></script>
     <script src="js/matching-days.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

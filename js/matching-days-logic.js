@@ -35,14 +35,36 @@ function MatchingDays() {
         
     }
 
+    function compareDates(){
+        return getFirstDate() == getSecondDate()
+    }
+
+    function returnClassName(){
+        if( compareDates()){
+            return "green";
+        }else{
+            if(getFirstDate() === "" || getSecondDate() === ""){
+                return "blue"
+            }
+            if(getFirstDate() != getSecondDate() ){
+                return {
+                    "first":"blue",
+                    "second":"red"
+                }
+            }
+        }
+
+    }
+
     return {
         setFirstDate,
         setSecondDate,
-
+        compareDates,
         getFirstDate,
         getSecondDate,
         getWeekdays,
         daysMatch,
+        returnClassName,
 
     };
 }
